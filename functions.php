@@ -191,9 +191,20 @@ $theme_version = '1.0.0';
 			'redirect'		=> false
 		));
 
+		acf_add_options_page(array(
+			'icon_url'		=> 'dashicons-feedback',
+			'page_title' 	=> 'Unicode Slider',
+			'menu_title'	=> 'Unicode Slider',
+			'menu_slug' 	=> 'the-slider',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false,
+			'position' 		=> '20.5',
+		));
+
 	}
 
-	
+
+
 	/**
 	 * Style Edit buttons as badges: http://getbootstrap.com/components/#badges
 	 *
