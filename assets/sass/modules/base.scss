@@ -11,3 +11,17 @@ body{
   font: 14px/20px sans-serif;
   color: $color-primary;
 }
+
+
+//Clearfix
+.clearfix {
+  zoom: 1;
+
+  &:after {
+      clear: both;
+      content: '';
+      display: block;
+  }
+}
+
+}
