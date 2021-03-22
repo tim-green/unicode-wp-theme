@@ -182,6 +182,16 @@ $theme_version = '1.0.0';
 	// 	));
 
 	// }
+		acf_add_options_page(array(
+			'icon_url'		=> 'dashicons-feedback',
+			'page_title' 	=> 'Unicode Options',
+			'menu_title'	=> 'Unicode Options',
+			'menu_slug' 	=> 'unicode-options',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		));
+
+	}
 
 	
 	/**
