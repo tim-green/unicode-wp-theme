@@ -14,4 +14,11 @@
     a{
         font-weight: $normal-weight;
     }
+        //touch/mobile
+        @include touch {
+            padding:1.5rem $side-padding-tablet 1rem;
+          }
+          @include mobile {
+            padding:1.5rem $side-padding-mobile 1rem;
+          }
 }
