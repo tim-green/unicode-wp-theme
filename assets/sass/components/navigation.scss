@@ -10,4 +10,8 @@
     align-items: center !important;
     position: relative;
     font-family: $acumin-pro-semicondensed;
+
+    a{
+        font-weight: $normal-weight;
+    }
 }
