@@ -546,6 +546,8 @@ $theme_version = '1.0.1';
 		wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/js/main.min.js', false, $theme_version, true );
 		wp_enqueue_script( 'jquery',  'https://code.jquery.com/jquery-3.6.0.min.js', false, $theme_version, true );
 
+		wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/build/app.min.js', false, $theme_version, true );
+
 		wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/c20cab8581.js', false, $theme_version, true );
 
 
