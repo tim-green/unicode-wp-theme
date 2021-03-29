@@ -513,7 +513,7 @@ $theme_version = '1.0.1';
 	}
 
 	// Custom Nav Walker: wp_bootstrap4_navwalker()
-	$custom_walker = get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
+	$custom_walker = get_template_directory() . '/inc/unicode_walker.php';
 	if ( is_readable( $custom_walker ) ) {
 		require_once $custom_walker;
 	}
