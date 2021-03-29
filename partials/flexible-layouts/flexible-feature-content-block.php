@@ -1,6 +1,6 @@
 <?php
 /*
-  ACF Flexible Content - Template Name Here
+  ACF Flexible Content - Feature Content Block
   
   Field Example
   <?php the_sub_field('text'); ?>
@@ -19,7 +19,7 @@
                 <h2></h2>
 
                 <a href="" class="uc-feature-story__button" rel="noopener noreferrer">
-                    
+
                 </a>
             </div>
         </div>
