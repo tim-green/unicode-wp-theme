@@ -21,7 +21,7 @@
 
     ?>
 
-	<div class="hero is-large">
+	<div class="hero is-large unicode-slider">
 
 
 		<div class="hero-body">
