@@ -3,34 +3,44 @@
  * Template Name: Blog Index
  * Description: The template for displaying the Blog index /blog.
  *
+ * 
  */
 
 	get_header();
 
-	$page_id = get_option( 'page_for_posts' );
+	//get_template_part('partials/acf-flexible-loop'); 
 ?>
 
-	<div class="row">
-		
-		<div class="col-md-12">
-			<?php
-				echo nl2br( apply_filters( 'the_content', get_post_field( 'post_content', $page_id ) ) ); // = echo content from Bloghome
-
-				edit_post_link( __( 'Edit', 'my-theme' ), '<span class="edit-link">', '</span>', $page_id );
-			?>
-		</div><!-- /.col -->
-
-		<div class="col-md-12">
-			<?php
-				get_template_part( 'archive', 'loop' );
-			?>
-		</div><!-- /.col -->
-		
-	</div><!-- /.row -->
 <?php if(function_exists('bcn_display')) : ?>
 <div class="breadcrumbs" typeof="BreadcrumbList" vocab="https://schema.org/">   
     <?php bcn_display();	?>
 </div>
 <?php endif; ?>
+
+<main id="site-content" role="main" class="main-content">
+
+	<?php
+
+	if ( have_posts() ) {
+
+		while ( have_posts() ) {
+			the_post();
+
+			get_template_part( 'template-parts/content-page',get_post_type() );
+
+			get_template_part('template-parts/acf-hero-image-page');             
+
+			get_template_part('partials/acf-flexible-loop');
+		}
+	}
+
+	?>
+
+	
+		<button id="to-top" class="to-top-hidden">
+			<i class="fas fa-chevron-up" aria-hidden="true"></i>
+		</button>
+</main><!-- #site-content -->
+
 
 <?php get_footer(); ?>
