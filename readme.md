@@ -13,3 +13,5 @@ Unicode is a WordPress theme
 * Classic Editor
 
 * Gravity Forms
+
+* Breadcrumb NavXT
