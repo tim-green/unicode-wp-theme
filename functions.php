@@ -161,6 +161,23 @@ $theme_version = '1.0.1';
 	add_filter( 'comments_open', 'themes_starter_filter_media_comment_status', 10, 2 );
 
 
+	/**
+	 * Add CSS to ACF Admin
+	 *
+	 * 
+	 *
+	 * @since v1.0
+	 */
+	function acf_admin_styles() {
+		?>
+		<style type="text/css">
+		
+		</style>
+		<?php
+	}
+	
+	add_action('acf/input/admin_head', 'acf_admin_styles');
+
 /**
 	 * Add Advanced Custom Fields Option page
 	 *
