@@ -172,6 +172,18 @@ $theme_version = '1.0.1';
 		?>
 		<style type="text/css">
 		
+		/* global acf styles */
+			.acf-fc-layout-order{
+				background: #8e6f3e !important;
+				color: #fff !important;
+			}
+			.acf-flexible-content .layout .acf-fc-layout-handle{
+				color: #0a0a0a !important;
+			}
+			/* styles for acf-four-card-block */
+			.acf-four-card-block{
+
+			}
 		</style>
 		<?php
 	}
