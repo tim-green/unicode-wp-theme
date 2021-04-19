@@ -172,6 +172,10 @@ $theme_version = '1.0.1';
 		?>
 		<style type="text/css">
 		
+		/* unicode page builder - global styles */
+		.unicode-page-builder{
+		}
+
 		/* global acf styles */
 			.acf-fc-layout-order{
 				background: #8e6f3e !important;
