@@ -186,7 +186,11 @@ $theme_version = '1.0.1';
 			}
 			/* styles for acf-four-card-block */
 			.acf-four-card-block{
+			.four-card-block-admin{
 
+			}
+			.four-card-block-admin .acf-actions{
+				display: none !important;
 			}
 		</style>
 		<?php
