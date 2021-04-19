@@ -207,18 +207,8 @@ $theme_version = '1.0.1';
 	 * @since v1.0
 	 */
 
-	// if( function_exists('acf_add_options_page') ) {
+	if( function_exists('acf_add_options_page') ) {
 	
-	// 	acf_add_options_page(array(
-	// 		'icon_url'		=> 'dashicons-feedback',
-	// 		'page_title' 	=> 'Site Options',
-	// 		'menu_title'	=> 'Site Options',
-	// 		'menu_slug' 	=> 'site-options',
-	// 		'capability'	=> 'edit_posts',
-	// 		'redirect'		=> false
-	// 	));
-
-	// }
 		acf_add_options_page(array(
 			'icon_url'		=> 'dashicons-feedback',
 			'page_title' 	=> 'Unicode Options',
