@@ -171,7 +171,6 @@ $theme_version = '1.0.1';
 	function acf_admin_styles() {
 		?>
 		<style type="text/css">
-		
 		/* unicode page builder - global styles */
 		.unicode-page-builder{
 		}
@@ -185,7 +184,6 @@ $theme_version = '1.0.1';
 				color: #0a0a0a !important;
 			}
 			/* styles for acf-four-card-block */
-			.acf-four-card-block{
 			.four-card-block-admin{
 
 			}
@@ -561,7 +559,7 @@ $theme_version = '1.0.1';
 
 		// 1. Styles
 		wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css', false, $theme_version, 'all' );
-		// wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/node_modules/bootstrap/dist/css/bootstrap.min.css', false, $theme_version, 'all' );
+		
 		wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/build/app.min.css', false, $theme_version, 'all' ); // main.scss: Compiled Framework source + custom styles
 		
 		if ( is_rtl() ) {
