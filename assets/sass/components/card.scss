@@ -50,3 +50,19 @@
     }
 }
 
+
+ .link-card--square {
+        .media-content{
+            display:flex;
+            flex-direction:column;
+            align-items:flex-start !important
+        }
+        p{
+            color: $steel-gray !important;
+            font-weight:400 !important
+        }
+        .title{
+            color:$deep-gold !important;
+            font-weight:600 !important
+        }
+}
