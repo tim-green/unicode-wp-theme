@@ -1,0 +1,10 @@
+.feature-gold-block{
+  img{
+    border: 6px $deep-gold solid;
+    &:hover{
+      border: 6px $field-gold solid;
+      transition:border ease-in .75s;
+    }
+    transition: border ease-out 0.25s;
+  }
+}
