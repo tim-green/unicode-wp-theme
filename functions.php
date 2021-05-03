@@ -16,6 +16,16 @@ $theme_version = '1.0.1';
 
 
 	/**
+	 * Include Post Type of Staff
+	 *
+	 * @since v1.0
+	 */
+	$unicode_pt_staff = get_template_directory() . '/inc/post_type-staff.php';
+	if ( is_readable( $unicode_pt_staff ) ) {
+		require_once $unicode_pt_staff;
+	}
+
+	/**
 	 * Include Support for wordpress.com-specific functions.
 	 * 
 	 * @since v1.0
