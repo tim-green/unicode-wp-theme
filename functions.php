@@ -26,6 +26,17 @@ $theme_version = '1.0.1';
 	}
 
 	/**
+	 * Include Syncing ACF field - Staff Name to Post Title
+	 *
+	 * @since v1.0
+	 */
+	// $unicode_acf_sync_snpt = get_template_directory() . '/inc/sync_acf_post_title-staff.php';
+	// if ( is_readable( $unicode_acf_sync_snpt ) ) {
+	// 	require_once $unicode_acf_sync_snpt;
+	// }
+
+	
+	/**
 	 * Include Support for wordpress.com-specific functions.
 	 * 
 	 * @since v1.0
