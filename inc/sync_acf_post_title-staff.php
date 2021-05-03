@@ -8,7 +8,7 @@
 function sync_acf_post_title($post_id, $post, $update) {
     
     $acf_title = get_field('staff_name', $post_id); //enter the name of the ACF field here
-    if ( $title ) {
+    if ( $acf_title ) {
         $title = $acf_title;
     } else {
         $title = $post->post_title;
